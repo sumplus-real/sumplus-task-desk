@@ -1,0 +1,1701 @@
+{
+  "snapshotId": "6025998a056771c1599eb2b064ae5a40cf96a2d617b7994fbacc9502647d7def",
+  "source": "https://router.sumplus.xyz/v1/models",
+  "capturedAt": "2026-10-23T08:24:43.822Z",
+  "offers": [
+    {
+      "modelId": "claude-fable-5-1",
+      "line": "mixai",
+      "name": "claude-fable-5-1 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "50000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "10",
+      "outputPerMillion": "50"
+    },
+    {
+      "modelId": "claude-fable-5",
+      "line": "jinwang",
+      "name": "claude-fable-5 [J]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "50000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "10",
+      "outputPerMillion": "50"
+    },
+    {
+      "modelId": "claude-fable-5",
+      "line": "mixai",
+      "name": "claude-fable-5 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "50000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "10",
+      "outputPerMillion": "50"
+    },
+    {
+      "modelId": "claude-haiku-4-5-20251001",
+      "line": "arklin",
+      "name": "Claude Haiku 4.5 [A]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1",
+      "outputPerMillion": "5"
+    },
+    {
+      "modelId": "claude-haiku-4-5-20251001",
+      "line": "mixai",
+      "name": "claude-haiku-4-5-20251001 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1",
+      "outputPerMillion": "5"
+    },
+    {
+      "modelId": "claude-opus-4-5-20251101",
+      "line": "mixai",
+      "name": "claude-opus-4-5-20251101 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "25"
+    },
+    {
+      "modelId": "claude-opus-4-6",
+      "line": "mixai",
+      "name": "claude-opus-4-6 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "25"
+    },
+    {
+      "modelId": "claude-opus-4-7",
+      "line": "jinwang",
+      "name": "claude-opus-4-7 [J]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "75000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "15",
+      "outputPerMillion": "75"
+    },
+    {
+      "modelId": "claude-opus-4-7",
+      "line": "mixai",
+      "name": "claude-opus-4-7 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "25"
+    },
+    {
+      "modelId": "claude-opus-4-8",
+      "line": "arklin",
+      "name": "Claude Opus 4.8 [A]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "25"
+    },
+    {
+      "modelId": "claude-opus-4-8",
+      "line": "jinwang",
+      "name": "claude-opus-4-8 [J]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "75000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "15",
+      "outputPerMillion": "75"
+    },
+    {
+      "modelId": "claude-opus-4-8",
+      "line": "mixai",
+      "name": "claude-opus-4-8 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "25000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "25"
+    },
+    {
+      "modelId": "claude-sonnet-4-5-20250929",
+      "line": "mixai",
+      "name": "claude-sonnet-4-5-20250929 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "claude-sonnet-4-6",
+      "line": "jinwang",
+      "name": "claude-sonnet-4-6 [J]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "claude-sonnet-4-6",
+      "line": "mixai",
+      "name": "claude-sonnet-4-6 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "claude-sonnet-5",
+      "line": "jinwang",
+      "name": "claude-sonnet-5 [J]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "claude-sonnet-5",
+      "line": "mixai",
+      "name": "claude-sonnet-5 [M]",
+      "context": 200000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "10"
+    },
+    {
+      "modelId": "deepseek-flash",
+      "line": "deepseek",
+      "name": "DeepSeek V4.1 Flash-0910",
+      "context": 1000000,
+      "maxOutput": 384000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "150000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.15",
+      "outputPerMillion": "0.6"
+    },
+    {
+      "modelId": "deepseek-v3-0324",
+      "line": "mixai",
+      "name": "deepseek-v3-0324 [M]",
+      "context": 128000,
+      "maxOutput": 8192,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "1.2"
+    },
+    {
+      "modelId": "deepseek-v3.2",
+      "line": "mixai",
+      "name": "deepseek-v3.2 [M]",
+      "context": 128000,
+      "maxOutput": 8192,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "450000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "0.45"
+    },
+    {
+      "modelId": "deepseek-v4-flash",
+      "line": "cm",
+      "name": "deepseek-v4-flash-0731 [C]",
+      "context": 1000000,
+      "maxOutput": 384000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "140000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "280000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.14",
+      "outputPerMillion": "0.28"
+    },
+    {
+      "modelId": "deepseek-v4-flash",
+      "line": "deepseek",
+      "name": "DeepSeek V4 Flash-0731",
+      "context": 1000000,
+      "maxOutput": 384000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "150000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.15",
+      "outputPerMillion": "0.6"
+    },
+    {
+      "modelId": "deepseek-v4-flash",
+      "line": "mixai",
+      "name": "deepseek-v4-flash-0731 [M]",
+      "context": 128000,
+      "maxOutput": 8192,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "140000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "280000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.14",
+      "outputPerMillion": "0.28"
+    },
+    {
+      "modelId": "deepseek-v4-pro",
+      "line": "deepseek",
+      "name": "DeepSeek V4 Pro-0813",
+      "context": 1000000,
+      "maxOutput": 384000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "435000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "870000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.435",
+      "outputPerMillion": "0.87"
+    },
+    {
+      "modelId": "deepseek-v4-pro",
+      "line": "mixai",
+      "name": "deepseek-v4-pro-0813 [M]",
+      "context": 128000,
+      "maxOutput": 8192,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1740000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "3480000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.74",
+      "outputPerMillion": "3.48"
+    },
+    {
+      "modelId": "doubao-seedance-2-0-fast",
+      "line": "arklin",
+      "name": "Seedance 2.0 Fast [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "doubao-seedance-2.0",
+      "line": "arklin",
+      "name": "Seedance 2.0 [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "doubao-seedream-4-0",
+      "line": "ark",
+      "name": "Seedream 4.0 [R]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "preview",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "dreamina-seedance-2-0-fast-lite",
+      "line": "arklin",
+      "name": "Dreamina Seedance 2.0 Fast Lite [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "dreamina-seedance-2-0-fast",
+      "line": "arklin",
+      "name": "Dreamina Seedance 2.0 Fast [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "dreamina-seedance-2-0-lite",
+      "line": "arklin",
+      "name": "Dreamina Seedance 2.0 Lite [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "dreamina-seedance-2-0",
+      "line": "arklin",
+      "name": "Dreamina Seedance 2.0 [A]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "gemini-2.5-flash-lite",
+      "line": "mixai",
+      "name": "gemini-2.5-flash-lite [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "100000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.1",
+      "outputPerMillion": "0.4"
+    },
+    {
+      "modelId": "gemini-2.5-flash",
+      "line": "mixai",
+      "name": "gemini-2.5-flash [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "2.5"
+    },
+    {
+      "modelId": "gemini-2.5-pro",
+      "line": "arklin",
+      "name": "Gemini 2.5 Pro [A]",
+      "context": 1000000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "10"
+    },
+    {
+      "modelId": "gemini-2.5-pro",
+      "line": "mixai",
+      "name": "gemini-2.5-pro [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "10000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "10"
+    },
+    {
+      "modelId": "gemini-3-flash-preview",
+      "line": "mixai",
+      "name": "gemini-3-flash-preview [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "500000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.5",
+      "outputPerMillion": "3"
+    },
+    {
+      "modelId": "gemini-3.1-flash-lite-preview",
+      "line": "mixai",
+      "name": "gemini-3.1-flash-lite-preview [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.25",
+      "outputPerMillion": "1.5"
+    },
+    {
+      "modelId": "gemini-3.1-flash-lite",
+      "line": "mixai",
+      "name": "gemini-3.1-flash-lite [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.25",
+      "outputPerMillion": "1.5"
+    },
+    {
+      "modelId": "gemini-3.1-pro-preview-customtools",
+      "line": "mixai",
+      "name": "gemini-3.1-pro-preview-customtools [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "12000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "12"
+    },
+    {
+      "modelId": "gemini-3.1-pro-preview",
+      "line": "arklin",
+      "name": "Gemini 3.1 Pro (Preview) [A]",
+      "context": 1000000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "12000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "12"
+    },
+    {
+      "modelId": "gemini-3.1-pro-preview",
+      "line": "mixai",
+      "name": "gemini-3.1-pro-preview [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "12000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "12"
+    },
+    {
+      "modelId": "gemini-3.5-flash",
+      "line": "arklin",
+      "name": "Gemini 3.5 Flash [A]",
+      "context": 1000000,
+      "maxOutput": 64000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1500000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "9000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.5",
+      "outputPerMillion": "9"
+    },
+    {
+      "modelId": "gemini-3.5-flash",
+      "line": "mixai",
+      "name": "gemini-3.5-flash [M]",
+      "context": 1000000,
+      "maxOutput": 65536,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1500000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "9000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.5",
+      "outputPerMillion": "9"
+    },
+    {
+      "modelId": "glm-4.5-air",
+      "line": "glm",
+      "name": "GLM-4.5 Air",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1100000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.2",
+      "outputPerMillion": "1.1"
+    },
+    {
+      "modelId": "glm-4.5-flash",
+      "line": "glm",
+      "name": "GLM-4.5 Flash",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "glm-4.5",
+      "line": "glm",
+      "name": "GLM-4.5",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.6",
+      "outputPerMillion": "2.2"
+    },
+    {
+      "modelId": "glm-4.6",
+      "line": "glm",
+      "name": "GLM-4.6",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.6",
+      "outputPerMillion": "2.2"
+    },
+    {
+      "modelId": "glm-4.7-flash",
+      "line": "glm",
+      "name": "GLM-4.7 Flash",
+      "context": 200000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "glm-4.7",
+      "line": "glm",
+      "name": "GLM-4.7",
+      "context": 200000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.6",
+      "outputPerMillion": "2.2"
+    },
+    {
+      "modelId": "glm-5-turbo",
+      "line": "glm",
+      "name": "GLM-5 Turbo",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.2",
+      "outputPerMillion": "4"
+    },
+    {
+      "modelId": "glm-5.1",
+      "line": "glm",
+      "name": "GLM-5.1",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1400000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.4",
+      "outputPerMillion": "4.4"
+    },
+    {
+      "modelId": "glm-5.1",
+      "line": "mixai",
+      "name": "glm-5.1 [M]",
+      "context": 128000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "900000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.9",
+      "outputPerMillion": "4"
+    },
+    {
+      "modelId": "glm-5.1",
+      "line": "nube",
+      "name": "glm-5.1 [N]",
+      "context": 128000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1400000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.4",
+      "outputPerMillion": "4.4"
+    },
+    {
+      "modelId": "glm-5.2",
+      "line": "glm",
+      "name": "GLM-5.2",
+      "context": 1000000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1400000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.4",
+      "outputPerMillion": "4.4"
+    },
+    {
+      "modelId": "glm-5.2",
+      "line": "mixai",
+      "name": "glm-5.2 [M]",
+      "context": 128000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.2",
+      "outputPerMillion": "4.2"
+    },
+    {
+      "modelId": "glm-5.2",
+      "line": "nube",
+      "name": "glm-5.2 [N]",
+      "context": 128000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1400000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.4",
+      "outputPerMillion": "4.4"
+    },
+    {
+      "modelId": "glm-5.3",
+      "line": "glm",
+      "name": "GLM-5.3",
+      "context": 1000000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1400000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.4",
+      "outputPerMillion": "4.4"
+    },
+    {
+      "modelId": "glm-5",
+      "line": "glm",
+      "name": "GLM-5",
+      "context": 128000,
+      "maxOutput": 16000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "3200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1",
+      "outputPerMillion": "3.2"
+    },
+    {
+      "modelId": "gpt-4.1",
+      "line": "arklin",
+      "name": "GPT-4.1 [A]",
+      "context": 1000000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "8000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "8"
+    },
+    {
+      "modelId": "gpt-5-mini",
+      "line": "arklin",
+      "name": "GPT-5 Mini [A]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.25",
+      "outputPerMillion": "2"
+    },
+    {
+      "modelId": "gpt-5.3-codex",
+      "line": "mixai",
+      "name": "gpt-5.3-codex [M]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "16000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "16"
+    },
+    {
+      "modelId": "gpt-5.4-mini",
+      "line": "mixai",
+      "name": "gpt-5.4-mini [M]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "750000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.75",
+      "outputPerMillion": "4.5"
+    },
+    {
+      "modelId": "gpt-5.4",
+      "line": "mixai",
+      "name": "gpt-5.4 [M]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "75000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "450000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "75",
+      "outputPerMillion": "450"
+    },
+    {
+      "modelId": "gpt-5.5",
+      "line": "arklin",
+      "name": "GPT-5.5 [A]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "30000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "30"
+    },
+    {
+      "modelId": "gpt-5.5",
+      "line": "jinwang",
+      "name": "gpt-5.5 [J]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "5000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "30000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "5",
+      "outputPerMillion": "30"
+    },
+    {
+      "modelId": "gpt-5.5",
+      "line": "mixai",
+      "name": "gpt-5.5 [M]",
+      "context": 400000,
+      "maxOutput": 128000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "75000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "450000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "75",
+      "outputPerMillion": "450"
+    },
+    {
+      "modelId": "grok-4-1-fast-non-reasoning",
+      "line": "mixai",
+      "name": "grok-4-1-fast-non-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.2",
+      "outputPerMillion": "0.5"
+    },
+    {
+      "modelId": "grok-4-1-fast-reasoning",
+      "line": "mixai",
+      "name": "grok-4-1-fast-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.2",
+      "outputPerMillion": "0.5"
+    },
+    {
+      "modelId": "grok-4-fast-non-reasoning",
+      "line": "mixai",
+      "name": "grok-4-fast-non-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.2",
+      "outputPerMillion": "0.5"
+    },
+    {
+      "modelId": "grok-4-fast-reasoning",
+      "line": "mixai",
+      "name": "grok-4-fast-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "200000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.2",
+      "outputPerMillion": "0.5"
+    },
+    {
+      "modelId": "grok-4.1",
+      "line": "mixai",
+      "name": "grok-4.1 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "6000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "6"
+    },
+    {
+      "modelId": "grok-4.2",
+      "line": "mixai",
+      "name": "grok-4.2 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "6000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "6"
+    },
+    {
+      "modelId": "grok-4.20-0309-non-reasoning",
+      "line": "mixai",
+      "name": "grok-4.20-0309-non-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "2.5"
+    },
+    {
+      "modelId": "grok-4.20-0309-reasoning",
+      "line": "mixai",
+      "name": "grok-4.20-0309-reasoning [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "2.5"
+    },
+    {
+      "modelId": "grok-4.20-multi-agent-0309",
+      "line": "mixai",
+      "name": "grok-4.20-multi-agent-0309 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "2.5"
+    },
+    {
+      "modelId": "grok-4.3",
+      "line": "mixai",
+      "name": "grok-4.3 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1250000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2500000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.25",
+      "outputPerMillion": "2.5"
+    },
+    {
+      "modelId": "grok-4",
+      "line": "mixai",
+      "name": "grok-4 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "jev",
+      "line": "mixai",
+      "name": "Jev [M]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "preview",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "kimi-k2.5",
+      "line": "mixai",
+      "name": "kimi-k2.5 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.6",
+      "outputPerMillion": "3"
+    },
+    {
+      "modelId": "kimi-k2.5",
+      "line": "nube",
+      "name": "kimi-k2.5 [N]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "600000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.6",
+      "outputPerMillion": "3"
+    },
+    {
+      "modelId": "kimi-k2.6",
+      "line": "mixai",
+      "name": "kimi-k2.6 [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1",
+      "outputPerMillion": "4"
+    },
+    {
+      "modelId": "kimi-k2.6",
+      "line": "nube",
+      "name": "kimi-k2.6 [N]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "950000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.95",
+      "outputPerMillion": "4"
+    },
+    {
+      "modelId": "kimi-k2.7-code",
+      "line": "mixai",
+      "name": "kimi-k2.7-code [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "4000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1",
+      "outputPerMillion": "4"
+    },
+    {
+      "modelId": "kimi-k3",
+      "line": "nube",
+      "name": "kimi-k3 [N]",
+      "context": 1048576,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "3000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "15000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "3",
+      "outputPerMillion": "15"
+    },
+    {
+      "modelId": "MiniMax-M2.7",
+      "line": "mixai",
+      "name": "MiniMax-M2.7 [M]",
+      "context": 1000000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "1.2"
+    },
+    {
+      "modelId": "MiniMax/MiniMax-M2.7",
+      "line": "mixai",
+      "name": "MiniMax/MiniMax-M2.7 [M]",
+      "context": 1000000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "12000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "12"
+    },
+    {
+      "modelId": "MiniMax/MiniMax-M3",
+      "line": "mixai",
+      "name": "MiniMax/MiniMax-M3 [M]",
+      "context": 1000000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "700000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "2800000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.7",
+      "outputPerMillion": "2.8"
+    },
+    {
+      "modelId": "qwen3.7-max",
+      "line": "mixai",
+      "name": "qwen3.7-max [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "1800000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "5400000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "1.8",
+      "outputPerMillion": "5.4"
+    },
+    {
+      "modelId": "qwen3.7-plus",
+      "line": "mixai",
+      "name": "qwen3.7-plus [M]",
+      "context": 256000,
+      "maxOutput": 32000,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "300000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "1200000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0.3",
+      "outputPerMillion": "1.2"
+    },
+    {
+      "modelId": "qwen3.8-max",
+      "line": "mixai",
+      "name": "qwen3.8-max [M]",
+      "context": 1000000,
+      "maxOutput": 131072,
+      "availability": "preview",
+      "inputRate": {
+        "numerator": "2000000",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "6000000",
+        "denominator": "1"
+      },
+      "inputPerMillion": "2",
+      "outputPerMillion": "6"
+    },
+    {
+      "modelId": "seedance-2-0-fast",
+      "line": "ark",
+      "name": "Seedance 2.0 Fast [R]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "seedance-2-0-mini",
+      "line": "ark",
+      "name": "Seedance 2.0 Mini [R]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    },
+    {
+      "modelId": "seedance-2-0",
+      "line": "ark",
+      "name": "Seedance 2.0 [R]",
+      "context": 0,
+      "maxOutput": 0,
+      "availability": "live",
+      "inputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "outputRate": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "inputPerMillion": "0",
+      "outputPerMillion": "0"
+    }
+  ],
+  "inputRows": 94,
+  "invalid": []
+}

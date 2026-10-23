@@ -1,0 +1,18 @@
+{
+  "runtime_vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "dependency_counts": {
+    "prod": 96,
+    "dev": 27,
+    "optional": 26,
+    "peer": 0,
+    "peerOptional": 0,
+    "total": 122
+  }
+}

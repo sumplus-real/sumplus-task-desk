@@ -1,0 +1,32 @@
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import express from 'express';
+import {createMcpExpressApp} from '@modelcontextprotocol/sdk/server/express.js';
+import {Desk} from './src/desk.mjs';
+import {loadCatalogue} from './src/catalogue.mjs';
+import {persistence} from './src/persistence.mjs';
+import {mcpHandler} from './src/mcp.mjs';
+const port=Number(process.env.PORT||19243);
+const here=path.dirname(fileURLToPath(import.meta.url));
+const origins=(process.env.ALLOWED_ORIGINS||`http://127.0.0.1:${port},http://localhost:${port}`).split(',');
+const hosts=(process.env.ALLOWED_HOSTS||'127.0.0.1,localhost').split(',');
+const desk=new Desk(await loadCatalogue());
+const save=persistence(desk,process.env.STATE_PATH||path.join(here,'data/workspaces.json'));save();
+const app=createMcpExpressApp({host:'127.0.0.1',allowedHosts:hosts});
+app.use((req,res,next)=>{
+ res.set({'x-content-type-options':'nosniff','cache-control':'no-store','referrer-policy':'no-referrer','content-security-policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"});
+ if(req.headers.origin&&!origins.includes(req.headers.origin))return res.status(403).json({error:'Origin not allowed'});
+ next();
+});
+app.all('/mcp',(req,res,next)=>{
+ const version=req.headers['mcp-protocol-version'];
+ if(version&&version!=='2025-11-25')return res.status(400).json({error:'Unsupported MCP-Protocol-Version; use 2025-11-25'});
+ if(req.method!=='POST')return res.status(405).set('allow','POST').json({error:'No standalone SSE stream; use POST Streamable HTTP'});
+ next();
+},mcpHandler(desk,save));
+app.get('/healthz',(req,res)=>res.json({ok:true,protocol:'2025-11-25',sdk:'@modelcontextprotocol/sdk',mode:'simulation',catalogue:{snapshotId:desk.snapshot.snapshotId,capturedAt:desk.snapshot.capturedAt,offers:desk.snapshot.offers.length}}));
+app.get('/catalogue.json',(req,res)=>res.json(desk.snapshot));
+app.use(express.static(path.join(here,'public')));
+app.use((err,req,res,next)=>{console.error(err.message);if(!res.headersSent)res.status(400).json({error:'Invalid request'});});
+const http=app.listen(port,'127.0.0.1',()=>console.log(`Task Desk: http://127.0.0.1:${port} (MCP 2025-11-25, simulation)`));
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>{save();http.close(()=>process.exit(0));});

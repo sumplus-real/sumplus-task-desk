@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-23T09:00:34.389Z",
+  "client": "@modelcontextprotocol/sdk Client + StreamableHTTPClientTransport",
+  "checks": [
+    {
+      "name": "initialize negotiated 2025-11-25",
+      "passed": true
+    },
+    {
+      "name": "tools/list exposes six real tools",
+      "passed": true
+    },
+    {
+      "name": "real tool comparison includes every catalogue offer",
+      "passed": true
+    },
+    {
+      "name": "approval is simulated and repeat is exactly idempotent",
+      "passed": true
+    },
+    {
+      "name": "changed task rejects old quote through actual MCP",
+      "passed": true
+    },
+    {
+      "name": "zero budget refuses approval through actual MCP",
+      "passed": true
+    },
+    {
+      "name": "real-time 5 second quote expiry enforced",
+      "passed": true
+    },
+    {
+      "name": "notification accepted with empty HTTP 202",
+      "passed": true
+    },
+    {
+      "name": "GET explicitly returns 405 when standalone SSE disabled",
+      "passed": true
+    },
+    {
+      "name": "bad Origin denied HTTP 403",
+      "passed": true
+    },
+    {
+      "name": "bad protocol header denied HTTP 400",
+      "passed": true
+    },
+    {
+      "name": "DNS rebinding Host denied HTTP 403",
+      "passed": true
+    }
+  ],
+  "tools": [
+    "start_workspace",
+    "review_task",
+    "withdraw_quote",
+    "inspect_workspace",
+    "create_quote",
+    "confirm_approval"
+  ],
+  "negativeHttp": {
+    "notification": 202,
+    "get": 405,
+    "badOrigin": 403,
+    "badVersion": 400,
+    "badHost": 403
+  },
+  "passed": true,
+  "scope": "Actual official SDK calls against the final runtime; historical mode explicitly selected; amount charged 0; no workspace capability IDs included."
+}

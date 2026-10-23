@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import http from 'node:http';
+import {Client} from '@modelcontextprotocol/sdk/client/index.js';
+import {StreamableHTTPClientTransport} from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+const base=process.env.TEST_URL||'http://127.0.0.1:19243';const wire=[];
+const trackedFetch=async(url,options)=>{const r=await fetch(url,options);let body;try{body=JSON.parse(options?.body||'{}');}catch{}const row={method:options?.method||'GET',rpc:body?.method,status:r.status,protocolHeader:new Headers(options?.headers).get('mcp-protocol-version')};if(body?.method==='initialize'){const data=await r.clone().json();row.negotiatedVersion=data.result?.protocolVersion;}wire.push(row);return r;};
+const client=new Client({name:'independent-official-sdk-verifier',version:'1.0.0'},{capabilities:{}});
+await client.connect(new StreamableHTTPClientTransport(new URL(base+'/mcp'),{fetch:trackedFetch}));
+const output={at:new Date().toISOString(),client:'@modelcontextprotocol/sdk Client + StreamableHTTPClientTransport',base,checks:[],wire};
+const check=(name,fn)=>{fn();output.checks.push({name,passed:true});};
+try{
+ check('initialize negotiated 2025-11-25',()=>assert.equal(wire.find(x=>x.rpc==='initialize').negotiatedVersion,'2025-11-25'));
+ const tools=await client.listTools();check('tools/list exposes six real tools',()=>assert.equal(tools.tools.length,6));output.tools=tools.tools.map(t=>t.name);
+ const tool=async(name,args={})=>{const r=await client.callTool({name,arguments:args});if(r.isError)return {error:JSON.parse(r.content[0].text)};return r.structuredContent??JSON.parse(r.content[0].text);};
+ const w=await tool('start_workspace');const id=w.id;
+ const r={pricingMode:'historical',task:'Summarize a report',inputTokens:12000,outputTokens:1500,budgetMicro:50000,allowedLine:'',modelId:''};
+ const reviewed=await tool('review_task',{workspaceId:id,request:r});check('real tool comparison includes every catalogue offer',()=>{assert.equal(reviewed.comparison.total,reviewed.snapshot.offerCount);assert.equal(reviewed.comparison.eligible.length+reviewed.comparison.rejected.length,reviewed.snapshot.offerCount);assert.ok(reviewed.comparison.eligible.length>0);});
+ let q=await tool('create_quote',{workspaceId:id,ttlSeconds:90});
+ const first=await tool('confirm_approval',{workspaceId:id,quoteId:q.quote.id});const replay=await tool('confirm_approval',{workspaceId:id,quoteId:q.quote.id});
+ check('approval is simulated and repeat is exactly idempotent',()=>{assert.equal(first.receipt.pricingMode,'historical');assert.equal(q.quote.pricingMode,'historical');assert.equal(first.receipt.amountChargedMicro,0);assert.deepEqual(first.receipt,replay.receipt);assert.equal(replay.receipts.length,1);assert.equal(replay.replayed,true);});
+ q=await tool('create_quote',{workspaceId:id,ttlSeconds:90});await tool('review_task',{workspaceId:id,request:{...r,task:'A different report'}});const old=await tool('confirm_approval',{workspaceId:id,quoteId:q.quote.id});check('changed task rejects old quote through actual MCP',()=>assert.equal(old.error.code,'INPUT_CHANGED'));
+ await tool('review_task',{workspaceId:id,request:{...r,budgetMicro:0}});const over=await tool('create_quote',{workspaceId:id});check('zero budget refuses approval through actual MCP',()=>assert.equal(over.error.code,'NO_APPROVABLE_OFFER'));
+ await tool('review_task',{workspaceId:id,request:r});q=await tool('create_quote',{workspaceId:id,ttlSeconds:5});await new Promise(r=>setTimeout(r,5100));const expired=await tool('confirm_approval',{workspaceId:id,quoteId:q.quote.id});check('real-time 5 second quote expiry enforced',()=>assert.equal(expired.error.code,'QUOTE_EXPIRED'));
+ const headers={'content-type':'application/json',accept:'application/json, text/event-stream','mcp-protocol-version':'2025-11-25'};
+ const notify=await fetch(base+'/mcp',{method:'POST',headers,body:JSON.stringify({jsonrpc:'2.0',method:'notifications/initialized'})});check('notification accepted with empty HTTP 202',()=>{assert.equal(notify.status,202);});assert.equal(await notify.text(),'');
+ const get=await fetch(base+'/mcp',{headers:{accept:'text/event-stream','mcp-protocol-version':'2025-11-25'}});check('GET explicitly returns 405 when standalone SSE disabled',()=>assert.equal(get.status,405));
+ const badOrigin=await fetch(base+'/mcp',{method:'POST',headers:{...headers,origin:'https://evil.example'},body:JSON.stringify({jsonrpc:'2.0',id:99,method:'tools/list'})});check('bad Origin denied HTTP 403',()=>assert.equal(badOrigin.status,403));
+ const badVersion=await fetch(base+'/mcp',{method:'POST',headers:{...headers,'mcp-protocol-version':'1999-01-01'},body:JSON.stringify({jsonrpc:'2.0',id:100,method:'tools/list'})});check('bad protocol header denied HTTP 400',()=>assert.equal(badVersion.status,400));
+ const badHost=await new Promise((resolve,reject)=>{const q=http.request(new URL(base+'/mcp'),{method:'POST',headers:{...headers,host:'evil.example'}},res=>{res.resume();res.on('end',()=>resolve({status:res.statusCode}));});q.on('error',reject);q.end(JSON.stringify({jsonrpc:'2.0',id:101,method:'tools/list'}));});check('DNS rebinding Host denied HTTP 403',()=>assert.equal(badHost.status,403));
+ output.negativeHttp={notification:notify.status,get:get.status,badOrigin:badOrigin.status,badVersion:badVersion.status,badHost:badHost.status};
+ output.approval={receiptId:first.receipt.id,expectedCostMicro:first.receipt.expectedCostMicro,charged:0};output.passed=true;
+}finally{await client.close();}
+console.log(JSON.stringify(output,null,2));

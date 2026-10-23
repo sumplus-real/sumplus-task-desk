@@ -1,0 +1,22 @@
+{
+  "duration_seconds": 108.0,
+  "video_codec": "h264",
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "audio_stream_count": 0,
+  "audio_note": "Intentional silent demo with English on-screen explanation; no music or voiceover.",
+  "bytes": 2784301,
+  "sha256": "1efa83636f11ec278e9d08484f8189ecc11d893c56ff60e79ed5d24213a99a14",
+  "keyframes": [
+    6,
+    38,
+    53,
+    62,
+    76,
+    94
+  ],
+  "capture_note": "Edited segments of actual browser screenshot capture, approximately 3 fps, encoded at 30 fps with repeated frames. UI is not recreated; English explanation panel added."
+}

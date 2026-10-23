@@ -1,0 +1,154 @@
+
+> sumplus-task-desk@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: exact decimal fractional micro-rate regression never rounds down
+ok 1 - exact decimal fractional micro-rate regression never rounds down
+  ---
+  duration_ms: 0.705958
+  ...
+# Subtest: round each token side upward; zero count remains zero
+ok 2 - round each token side upward; zero count remains zero
+  ---
+  duration_ms: 0.155875
+  ...
+# Subtest: canonical snapshot independent of row order; model+line identity preserved
+ok 3 - canonical snapshot independent of row order; model+line identity preserved
+  ---
+  duration_ms: 8.018083
+  ...
+# Subtest: invalid price cannot become zero/free
+ok 4 - invalid price cannot become zero/free
+  ---
+  duration_ms: 0.089125
+  ...
+# Subtest: reject both-zero and one-zero priced offers
+ok 5 - reject both-zero and one-zero priced offers
+  ---
+  duration_ms: 0.624666
+  ...
+# Subtest: comparison covers every offer with positive rejection reasons
+ok 6 - comparison covers every offer with positive rejection reasons
+  ---
+  duration_ms: 1.907625
+  ...
+# Subtest: user may constrain model and line; capacity uses input plus output
+ok 7 - user may constrain model and line; capacity uses input plus output
+  ---
+  duration_ms: 0.711542
+  ...
+# Subtest: budget boundary exact fit allowed and one micro below refused
+ok 8 - budget boundary exact fit allowed and one micro below refused
+  ---
+  duration_ms: 0.54075
+  ...
+# Subtest: approval binds revision, request, snapshot, chosen model/line and cost
+ok 9 - approval binds revision, request, snapshot, chosen model/line and cost
+  ---
+  duration_ms: 0.444208
+  ...
+# Subtest: repeated approval is idempotent even after quote expiry
+ok 10 - repeated approval is idempotent even after quote expiry
+  ---
+  duration_ms: 0.478042
+  ...
+# Subtest: editing task invalidates old approval
+ok 11 - editing task invalidates old approval
+  ---
+  duration_ms: 0.300416
+  ...
+# Subtest: editing inputTokens invalidates old approval
+ok 12 - editing inputTokens invalidates old approval
+  ---
+  duration_ms: 0.182666
+  ...
+# Subtest: editing outputTokens invalidates old approval
+ok 13 - editing outputTokens invalidates old approval
+  ---
+  duration_ms: 0.186208
+  ...
+# Subtest: editing budgetMicro invalidates old approval
+ok 14 - editing budgetMicro invalidates old approval
+  ---
+  duration_ms: 0.202042
+  ...
+# Subtest: editing allowedLine invalidates old approval
+ok 15 - editing allowedLine invalidates old approval
+  ---
+  duration_ms: 0.1515
+  ...
+# Subtest: editing modelId invalidates old approval
+ok 16 - editing modelId invalidates old approval
+  ---
+  duration_ms: 0.217
+  ...
+# Subtest: draft invalidation works even before a valid replacement request exists
+ok 17 - draft invalidation works even before a valid replacement request exists
+  ---
+  duration_ms: 0.721292
+  ...
+# Subtest: a new quote supersedes previous unapproved offer selection
+ok 18 - a new quote supersedes previous unapproved offer selection
+  ---
+  duration_ms: 0.712083
+  ...
+# Subtest: expiry boundary refuses exactly at expiration
+ok 19 - expiry boundary refuses exactly at expiration
+  ---
+  duration_ms: 0.210667
+  ...
+# Subtest: catalogue changed after quote refuses, even if cost unchanged
+ok 20 - catalogue changed after quote refuses, even if cost unchanged
+  ---
+  duration_ms: 0.235625
+  ...
+# Subtest: recalculate at confirmation catches a mutated price
+ok 21 - recalculate at confirmation catches a mutated price
+  ---
+  duration_ms: 0.251417
+  ...
+# Subtest: tampered client amount cannot alter server quote (no client amount accepted)
+ok 22 - tampered client amount cannot alter server quote (no client amount accepted)
+  ---
+  duration_ms: 0.191792
+  ...
+# Subtest: stale catalogue refuses quote and confirmation
+ok 23 - stale catalogue refuses quote and confirmation
+  ---
+  duration_ms: 0.194292
+  ...
+# Subtest: workspace isolation rejects another workspace quote
+ok 24 - workspace isolation rejects another workspace quote
+  ---
+  duration_ms: 0.14275
+  ...
+# Subtest: persisted receipts survive restart; pending quotes are withdrawn
+ok 25 - persisted receipts survive restart; pending quotes are withdrawn
+  ---
+  duration_ms: 2.792125
+  ...
+# Subtest: validation refuses NaN, fractions, negatives, zero token counts and unsupported budget
+ok 26 - validation refuses NaN, fractions, negatives, zero token counts and unsupported budget
+  ---
+  duration_ms: 0.170708
+  ...
+# Subtest: explicit historical mode stays testable on an old snapshot and labels its receipt
+ok 27 - explicit historical mode stays testable on an old snapshot and labels its receipt
+  ---
+  duration_ms: 0.22475
+  ...
+# Subtest: changing from historical mode to standard invalidates an existing quote
+ok 28 - changing from historical mode to standard invalidates an existing quote
+  ---
+  duration_ms: 0.160458
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.446542
